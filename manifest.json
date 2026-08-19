@@ -1,0 +1,18 @@
+{
+  "name": "MK ENGLISH ARCHIVE",
+  "short_name": "MK Archive",
+  "description": "학교별 내신, Grammar, Novel Study 영어 학습 앱",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fcf9ff",
+  "theme_color": "#6750a4",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

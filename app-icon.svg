@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#6750a4"/>
+  <path d="M116 132h280v248H116z" fill="#fff" opacity=".12"/>
+  <path d="M148 164h92v184h-92zm124 0h92v184h-92z" fill="#fff"/>
+  <path d="M240 164h32v184h-32z" fill="#eadfff"/>
+  <text x="256" y="306" text-anchor="middle" font-family="Arial,sans-serif" font-size="96" font-weight="700" fill="#6750a4">MK</text>
+</svg>
