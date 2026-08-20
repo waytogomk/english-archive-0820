@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="student-overrides.css">
   <link rel="stylesheet" href="course-icons.css">
+  <link rel="stylesheet" href="learning-status.css">
+  <link rel="stylesheet" href="gamification.css">
+  <link rel="stylesheet" href="school-student.css">
 </head>
 <body>
   <main class="app-shell">
@@ -37,22 +40,89 @@
 
       <div class="section-heading"><h2>학습 항목</h2><span>3개 코스</span></div>
       <div class="course-grid">
-        <button class="course-card" data-open="word-set-screen">
-          <span class="course-icon coral" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M8 11h.01M12 11h.01M16 11h.01"/></svg></span><strong>학교별 내신</strong><small>어휘 · 문법 프린트 · 기출유형 모의고사</small><em>학교 선택</em>
+        <button class="course-card" data-open="school-screen">
+          <span class="course-icon coral" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M8 11h.01M12 11h.01M16 11h.01"/></svg></span><strong>학교별 내신</strong><small>어휘 · 문법 프린트 · 기출유형 모의고사</small><span class="course-footer"><em>학교 선택</em><b class="learning-status in-progress" id="school-status">학습 중</b></span>
         </button>
-        <button class="course-card" data-toast="문법 퀴즈 콘텐츠를 준비 중이에요.">
-          <span class="course-icon blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5h9M5 9h6M5 13h4M14 12l2 2 4-5M5 19h14"/></svg></span><strong>Grammar</strong><small>관계사 · 분사 · to부정사</small><em>15 questions</em>
+        <button class="course-card" data-open="grammar-screen">
+          <span class="course-icon blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5h9M5 9h6M5 13h4M14 12l2 2 4-5M5 19h14"/></svg></span><strong>Grammar</strong><small>관계사 · 분사 · to부정사</small><span class="course-footer"><em>15 questions</em><b class="learning-status not-started" id="grammar-status">학습 전</b></span>
         </button>
-        <button class="course-card" data-toast="Novel Study 책 목록을 준비 중이에요.">
-          <span class="course-icon mint" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5A3.5 3.5 0 0 1 6.5 2H11v17H6.5A3.5 3.5 0 0 0 3 22V5.5ZM21 5.5A3.5 3.5 0 0 0 17.5 2H13v17h4.5A3.5 3.5 0 0 1 21 22V5.5Z"/></svg></span><strong>Novel Study</strong><small>책 제목 · Chapter · 독해 퀴즈</small><em>5–20 questions</em>
+        <button class="course-card" data-open="novel-screen">
+          <span class="course-icon mint" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5A3.5 3.5 0 0 1 6.5 2H11v17H6.5A3.5 3.5 0 0 0 3 22V5.5ZM21 5.5A3.5 3.5 0 0 0 17.5 2H13v17h4.5A3.5 3.5 0 0 1 21 22V5.5Z"/></svg></span><strong>Novel Study</strong><small>책 제목 · Chapter · 독해 퀴즈</small><span class="course-footer"><em>Gangsta Granny</em><b class="learning-status not-started" id="novel-status">학습 전</b></span>
         </button>
       </div>
 
-      <div class="section-heading"><h2>이어서 학습</h2></div>
-      <button class="continue-card" data-open="word-set-screen">
-        <div><span class="mini-label">VOCABULARY</span><strong>세화여중 기말 단어 세트</strong><small>50문제씩 3개 목록</small></div>
-        <span class="arrow">→</span>
+      <div class="section-heading"><h2>Teacher’s Treat Fridge</h2><span id="fridge-summary">0 / 10 획득</span></div>
+      <button class="fridge-preview" data-open="fridge-screen">
+        <div><span class="mini-label">STUDY HARD, SNACKS ON TEACHER!</span><strong>공부하면 쌤이 쏜다!</strong><small>학습 세트 1개 완료 = 간식 1개</small></div>
+        <div class="preview-snacks" id="preview-snacks" aria-hidden="true"></div>
       </button>
+    </section>
+
+    <section class="screen" id="school-screen">
+      <button class="back-button" data-open="home-screen">← 홈으로</button>
+      <div class="set-heading"><span class="chip">학교별 내신</span><h2>세화여중</h2><p>학습할 내신 항목을 선택하세요.</p></div>
+      <div class="school-study-list">
+        <button data-open="word-set-screen"><span class="study-list-icon coral">📚</span><div><strong>어휘</strong><small>기말 단어 150개 · 50개씩 학습</small></div><b class="learning-status in-progress">학습 중</b></button>
+        <button data-toast="학교 문법 프린트 퀴즈를 준비 중이에요."><span class="study-list-icon blue">📝</span><div><strong>학교 문법 프린트</strong><small>관리자 등록 문제</small></div><b class="learning-status not-started">학습 전</b></button>
+        <article class="published-mock-area">
+          <div class="mock-area-title"><span class="study-list-icon purple">✅</span><div><strong>기출유형 모의고사</strong><small>관리자가 배포한 시험</small></div></div>
+          <div class="mock-empty" id="mock-empty">아직 배포된 모의고사가 없어요.</div>
+          <button class="published-mock-card hidden" id="published-mock-card" data-open="student-mock-screen"><span><b>NEW</b><strong id="published-mock-title">기출유형 모의고사</strong><small id="published-mock-meta">25문제 · 새 시험</small></span><em>풀기 →</em></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen" id="student-mock-screen">
+      <button class="back-button" data-open="school-screen">← 학교별 내신</button>
+      <div class="set-heading"><span class="chip">세화여중 · 기출유형</span><h2 id="student-mock-title">기출유형 모의고사</h2><p>기출 유형과 이번 시험범위 지문으로 만든 시험입니다.</p></div>
+      <article class="mock-start-card"><span class="mock-paper-icon">✅</span><div><small>TEACHER PUBLISHED</small><h3 id="student-mock-count">25문제</h3><p>객관식과 서술형 · 자동 채점 및 해설</p></div><button id="start-published-mock" class="primary-button">모의고사 시작하기</button></article>
+    </section>
+
+    <section class="screen" id="dynamic-quiz-screen">
+      <button class="back-button" id="dynamic-quiz-back">← 목록으로</button>
+      <div class="quiz-meta"><span id="dynamic-quiz-title">퀴즈</span><strong id="dynamic-question-count">1 / 20</strong></div>
+      <div class="quiz-progress"><span id="dynamic-progress-bar"></span></div>
+      <article class="question-card">
+        <span class="chip" id="dynamic-quiz-kind">READING QUIZ</span>
+        <h2 id="dynamic-question-text"></h2>
+        <div id="dynamic-choices" class="choices"></div>
+        <div id="dynamic-short-answer" class="dynamic-short-answer hidden"><label for="dynamic-answer-input">답 입력</label><input id="dynamic-answer-input" autocomplete="off"><button id="submit-dynamic-answer" class="primary-button">정답 확인</button></div>
+        <div id="dynamic-feedback" class="feedback" aria-live="polite"></div>
+        <button id="next-dynamic-question" class="primary-button" disabled>다음 문제</button>
+      </article>
+    </section>
+
+    <section class="screen" id="grammar-screen">
+      <button class="back-button" data-open="home-screen">← 홈으로</button>
+      <div class="set-heading"><span class="chip">GRAMMAR</span><h2>문법 아이템</h2><p>각 아이템은 15문제씩 학습해요.</p></div>
+      <article class="wrong-review-card">
+        <div class="review-icon" aria-hidden="true">↻</div>
+        <div><span class="mini-label">WRONG ANSWER REVIEW</span><h3>오답 재학습</h3><p><strong id="wrong-count">4</strong>문제가 복습을 기다리고 있어요.</p></div>
+        <button id="review-wrong">오답만 다시 풀기</button>
+      </article>
+      <div class="grammar-list">
+        <button data-toast="관계사 15문제 퀴즈를 시작합니다."><span>관계사</span><small>15문제 · 오답 2</small><b class="learning-status in-progress">학습 중</b></button>
+        <button data-toast="분사 15문제 퀴즈를 시작합니다."><span>분사</span><small>15문제 · 오답 2</small><b class="learning-status in-progress">학습 중</b></button>
+        <button data-toast="to부정사 15문제 퀴즈를 시작합니다."><span>to부정사</span><small>15문제</small><b class="learning-status not-started">학습 전</b></button>
+      </div>
+    </section>
+
+    <section class="screen" id="fridge-screen">
+      <button class="back-button" data-open="home-screen">← 홈으로</button>
+      <div class="fridge-heading"><span class="chip">STUDY HARD, SNACKS ON TEACHER!</span><h2>Teacher’s Treat Fridge</h2><p>학습 세트를 완료하고 원하는 간식을 직접 골라요.</p></div>
+      <div class="fridge-body"><div class="fridge-grid" id="fridge-grid"></div><div class="fridge-handle" aria-hidden="true"></div></div>
+      <button class="primary-button pending-reward-button hidden" id="open-snack-picker">받지 않은 간식 보상 고르기</button>
+      <p class="next-reward" id="next-reward">학습 세트를 완료하면 10개 중 원하는 간식을 선택할 수 있어요.</p>
+    </section>
+
+    <section class="screen" id="novel-screen">
+      <button class="back-button" data-open="home-screen">← 홈으로</button>
+      <div class="set-heading"><span class="chip">NOVEL STUDY</span><h2>책 제목 목록</h2><p>관리자가 등록한 퀴즈를 선택하세요.</p></div>
+      <article class="novel-book-card">
+        <span class="novel-cover" aria-hidden="true"><svg viewBox="0 0 48 60"><path d="M8 7h28a6 6 0 0 1 6 6v40H14a6 6 0 0 1-6-6Z"/><circle cx="20" cy="29" r="2"/><circle cx="31" cy="29" r="2"/><path d="M20 38c3 3 8 3 11 0M13 7v46"/></svg></span>
+        <div><span class="ready-label">원문 그대로 등록 완료</span><h3>Gangsta Granny</h3><p>Ch. 1–22 · Reading Quiz 20문제</p><div class="book-progress"><span id="novel-progress-bar"></span></div><small id="novel-progress-text">아직 학습하지 않았어요.</small></div>
+        <button class="primary-button" id="start-novel">20문제 시작하기</button>
+      </article>
     </section>
 
     <section class="screen" id="word-set-screen">
@@ -127,6 +197,9 @@
     </nav>
     <div id="toast" role="status"></div>
   </main>
+  <div class="snack-picker hidden" id="snack-picker" role="dialog" aria-modal="true" aria-labelledby="snack-picker-title">
+    <div class="snack-picker-card"><span class="mini-label">TEACHER’S TREAT</span><h2 id="snack-picker-title">어떤 간식을 고를까요?</h2><p id="snack-picker-message">학습 완료 보상으로 원하는 간식을 하나 선택하세요.</p><div class="snack-choice-grid" id="snack-choice-grid"></div><button class="later-button" id="snack-picker-later">나중에 고르기</button></div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

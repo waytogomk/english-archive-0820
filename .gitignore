@@ -1,4 +1,13 @@
 tmp/
+data/
 .DS_Store
 Thumbs.db
 *.log
+.next/
+node_modules/
+.pnpm-store/
+__pycache__/
+.env*
+!.env.example
+.vercel/
+*.tsbuildinfo

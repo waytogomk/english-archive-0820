@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MK ENGLISH ARCHIVE 관리자 로그인</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(145deg,#f8f4ff,#fff7f0);font-family:Arial,"Noto Sans KR",sans-serif;color:#251d35}.card{width:min(100%,390px);padding:34px;border:1px solid #e7dff0;border-radius:28px;background:#fff;box-shadow:0 20px 60px #684c9120}.icon{display:grid;place-items:center;width:64px;height:64px;margin-bottom:20px;border-radius:22px;background:#efe6ff;font-size:32px}small{color:#7859a7;font-weight:800;letter-spacing:.08em}h1{margin:8px 0 10px;font-size:26px}p{margin:0 0 24px;color:#786f83;line-height:1.55}label{display:block;margin-bottom:8px;font-weight:700}input{width:100%;padding:15px;border:1px solid #dcd4e5;border-radius:14px;font-size:17px}button{width:100%;margin-top:14px;padding:15px;border:0;border-radius:14px;background:#7354aa;color:#fff;font-size:16px;font-weight:800;cursor:pointer}.error{min-height:22px;margin-top:12px;color:#c23f59;font-size:14px}.back{display:block;margin-top:15px;text-align:center;color:#7354aa;text-decoration:none}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon" aria-hidden="true">🔐</div>
+    <small>MK ENGLISH ARCHIVE</small>
+    <h1>관리자 로그인</h1>
+    <p>자료 업로드와 문제 배포는 관리자만 사용할 수 있습니다.</p>
+    <form id="login-form">
+      <label for="password">관리자 비밀번호</label>
+      <input id="password" type="password" autocomplete="current-password" autofocus required>
+      <button type="submit">관리자 화면 열기</button>
+      <div class="error" id="error" role="alert"></div>
+    </form>
+    <a class="back" href="index.html">학생 화면으로 돌아가기</a>
+  </main>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = event.currentTarget.querySelector('button');
+      const error = document.getElementById('error');
+      button.disabled = true;
+      error.textContent = '';
+      try {
+        const response = await fetch('/api/admin/login', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:document.getElementById('password').value})});
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || '로그인하지 못했습니다.');
+        location.replace('/admin.html');
+      } catch (loginError) {
+        error.textContent = loginError.message;
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
