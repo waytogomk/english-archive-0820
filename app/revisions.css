@@ -1250,7 +1250,7 @@ body {
   margin: 0 0 14px;
   color: #afc9ec;
   font-family: var(--font-google-sans), sans-serif;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 650;
   letter-spacing: -.02em;
   line-height: 1.25;
@@ -1343,6 +1343,30 @@ body {
   .notice-card {
     grid-column: auto;
   }
+}
+
+.dashboard-row .fridge-preview .reward-coupon {
+  margin-bottom: 12px;
+  padding: 3px 10px 3px 3px;
+  gap: 7px;
+}
+
+.dashboard-row .reward-coupon strong {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.dashboard-row .reward-coupon span {
+  font-size: 13px;
+}
+
+.dashboard-row .fridge-preview .button,
+.dashboard-row .fridge-preview .button:hover {
+  min-width: 106px;
+  min-height: 38px;
+  padding: 0 16px;
+  font-size: 12px;
 }
 
 /* Rebuilt hero copy: the text is no longer visually locked to the supplied bitmap. */
