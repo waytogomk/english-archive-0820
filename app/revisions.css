@@ -1230,7 +1230,7 @@ body {
   flex-direction: column;
   transform: translateX(-50%);
   background: #f8f8fb;
-  box-shadow: 0 0 28px 22px rgba(248, 248, 251, .99);
+  box-shadow: none;
   text-align: center;
 }
 
@@ -1268,7 +1268,7 @@ body {
     top: 4.5%;
     width: 88%;
     height: 30%;
-    box-shadow: 0 0 12px 8px rgba(248, 248, 251, .99);
+    box-shadow: none;
   }
 
   .hero.hero-image-shell .hero-copy-overlay h1 {
