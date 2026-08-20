@@ -1232,11 +1232,28 @@ body {
 }
 
 .dashboard-row .card-title h2,
-.dashboard-row .fridge-preview h2 {
+.dashboard-row .fridge-card-title {
   font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif;
   font-weight: 400;
   letter-spacing: -.025em;
   line-height: 1.08;
+}
+
+.dashboard-row .fridge-card-title {
+  display: block;
+  margin: 7px 0 12px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.dashboard-row .fridge-slogan {
+  margin: 0 0 14px;
+  color: #afc9ec;
+  font-family: var(--font-google-sans), sans-serif;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -.02em;
+  line-height: 1.25;
 }
 
 .notice-card {
