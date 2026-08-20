@@ -41,11 +41,11 @@ body {
 }
 
 .brand-typographic {
-  gap: 10px;
-  font-family: "Newsreader Variable", Georgia, serif;
-  font-size: 20px;
-  font-weight: 650;
-  letter-spacing: .025em;
+  gap: 8px;
+  font-family: "Manrope Variable", "Pretendard Variable", sans-serif;
+  font-size: 24px;
+  font-weight: 820;
+  letter-spacing: -.035em;
   line-height: 1;
 }
 
@@ -56,8 +56,8 @@ body {
 }
 
 .brand-typographic span + span {
-  padding-left: 11px;
-  border-left: 2px solid var(--coral);
+  padding-left: 13px;
+  border-left: 3px solid var(--coral);
   color: var(--coral);
 }
 
@@ -736,6 +736,48 @@ footer {
   border-top-color: var(--line);
 }
 
+.site-footer {
+  padding: 30px 0 36px;
+  display: block;
+  color: var(--muted);
+}
+
+.footer-contact,
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-contact {
+  padding-bottom: 18px;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.footer-contact strong {
+  color: var(--brand-blue);
+  font-family: "Manrope Variable", "Pretendard Variable", sans-serif;
+  font-size: 14px;
+}
+
+.footer-contact span + span {
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+
+.footer-contact a:hover,
+.footer-bottom a:hover {
+  color: var(--brand-blue);
+}
+
+.footer-bottom {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  justify-content: space-between;
+  font-size: 12px;
+}
+
 .quiz-header .brand b {
   font-size: 0;
 }
@@ -776,6 +818,10 @@ footer {
 
   .brand {
     align-self: flex-start;
+  }
+
+  .brand-typographic {
+    font-size: 20px;
   }
 
   .site-header nav {
@@ -891,6 +937,21 @@ footer {
     margin-top: 190px;
     opacity: .9;
   }
+
+  .site-footer {
+    margin: 0 18px;
+  }
+
+  .footer-contact {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-contact span + span {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 
 /* Keep the established English Archive palette; Renaissance is a layout reference only. */
@@ -921,6 +982,10 @@ footer {
   color: var(--brand-blue);
 }
 
+.brand-typographic:hover span:first-child {
+  color: var(--brand-blue);
+}
+
 .eyebrow,
 .study-board-top span,
 .hero-study-board li > b,
@@ -931,14 +996,15 @@ footer {
 }
 
 .hero h1 em {
-  color: #1d3159;
+  color: inherit;
 }
 
-.hero-brand-serif {
-  font-family: "Newsreader Variable", Georgia, serif;
-  font-size: 1.06em;
-  font-weight: 650;
-  letter-spacing: -.015em;
+.hero-brand-display {
+  color: var(--brand-blue);
+  font-family: "Manrope Variable", "Pretendard Variable", sans-serif;
+  font-size: 1.01em;
+  font-weight: 750;
+  letter-spacing: -.035em;
 }
 
 .button-dark {

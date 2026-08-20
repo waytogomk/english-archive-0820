@@ -64,7 +64,8 @@ ENGLISH ARCHIVE는 Renaissance의 **성숙한 교육 브랜드 톤, 넓은 여�
 > 필요할 때 꺼내 푸는 나만의 영어 보물창고, English Archive!
 
 - 첫 줄 `필요할 때 꺼내 푸는`은 기본 본문색을 사용한다.
-- `나만의 영어 보물창고, English Archive!`는 짙은 네이비 `#1D3159`로 강조한다.
+- `나만의 영어 보물창고,`는 윗줄과 같은 기본 제목색을 사용한다.
+- 영문 `English Archive!`만 선명한 블루 `#1769D2`로 밝게 강조한다.
 - `오늘 집중할 학습을 선택하세요` 영역과 주요 CTA는 선명한 블루 `#1769D2`를 사용한다.
 
 보조 문구:
@@ -133,8 +134,8 @@ ENGLISH ARCHIVE는 Renaissance의 **성숙한 교육 브랜드 톤, 넓은 여�
 - 한글·영문 공통: `Pretendard Variable`
 - fallback: `Pretendard`, `Noto Sans KR`, system sans-serif
 - npm의 `pretendard` 패키지를 사용해 브라우저·운영체제와 관계없이 같은 글꼴을 제공한다.
-- Renaissance의 본문 `Proxima Nova` + 제목 `Expo Serif Pro` 조합을 참고한다.
-- Adobe Fonts의 고유 서체를 복제하거나 hotlink하지 않고, OFL 라이선스의 `Newsreader Variable`을 영문 브랜드 `ENGLISH ARCHIVE`와 히어로의 `English Archive!`에 제한적으로 사용한다.
+- Renaissance 내비게이션의 가볍고 또렷한 산세리프 인상을 참고한다.
+- Adobe Fonts의 `Proxima Nova`를 복제하거나 hotlink하지 않고, 비슷하게 현대적이고 경쾌한 OFL 라이선스의 `Manrope Variable`을 영문 브랜드 `ENGLISH ARCHIVE`와 히어로의 `English Archive!`에 사용한다.
 - 한글 제목·본문·퀴즈는 현대적인 `Pretendard Variable`로 유지해 오래된 교재처럼 보이지 않게 한다.
 - 손글씨체와 장식용 serif는 사용하지 않는다.
 
@@ -171,6 +172,8 @@ ENGLISH ARCHIVE는 Renaissance의 **성숙한 교육 브랜드 톤, 넓은 여�
 ### 9.1 헤더
 
 - 왼쪽에 `ENGLISH ARCHIVE`를 동일한 크기의 두 단어로 배치한다.
+- 사이트 대표 이름이 메뉴처럼 약해 보이지 않도록 `Manrope Variable` 800 이상, 데스크톱 `24px`, 모바일 `20px`로 표시한다.
+- `ENGLISH`는 짙은 본문색, `ARCHIVE`는 브랜드 블루를 사용하고 두 단어 사이에는 `3px` 블루 구분선을 둔다.
 - 불필요한 심볼 로고는 사용하지 않는다.
 - 학생 메뉴와 관리자 메뉴를 동시에 노출하지 않는다.
 - `TREAT FRIDGE`는 다른 메뉴와 구분되는 부드러운 포인트 색을 사용한다.

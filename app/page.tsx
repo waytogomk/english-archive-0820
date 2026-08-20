@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow hero-eyebrow">Build your academic confidence!</span>
-          <h1>필요할 때 꺼내 푸는<br /><em>나만의 영어 보물창고, <span className="hero-brand-serif">English Archive!</span></em></h1>
+          <h1>필요할 때 꺼내 푸는<br /><em>나만의 영어 보물창고, <span className="hero-brand-display">English Archive!</span></em></h1>
           <p>학교 시험부터 문법, 원서리딩까지.<br />풀고, 확인하고, 내 실력을 차곡차곡 쌓아보세요.</p>
           <div className="hero-actions">
             <Link className="button button-dark" href="/exam-prep">오늘 학습 시작</Link>
@@ -59,6 +59,16 @@ export default function HomePage() {
         </article>
       </section>
     </main>
-    <footer><span>© ENGLISH ARCHIVE</span><Link href="/admin">관리자</Link></footer>
+    <footer className="site-footer">
+      <div className="footer-contact">
+        <strong>Contact</strong>
+        <span>Email: <a href="mailto:eng_archive@gmail.com">eng_archive@gmail.com</a></span>
+        <span>Mobile: <a href="tel:+821034535158">010.3453.5158</a></span>
+      </div>
+      <div className="footer-bottom">
+        <span>2026 English Archive. Inc. All rights reserved.</span>
+        <Link href="/admin">관리자</Link>
+      </div>
+    </footer>
   </>;
 }
