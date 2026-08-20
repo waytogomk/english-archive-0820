@@ -1750,11 +1750,11 @@ body {
 }
 
 .fridge-reference-art {
-  top: 10px;
-  right: 10px;
-  width: 40%;
-  height: calc(100% - 20px);
-  border-radius: 22px;
+  top: 12%;
+  right: 18px;
+  width: 34%;
+  height: 76%;
+  border-radius: 18px;
 }
 
 @media (max-width: 720px) {
@@ -1766,7 +1766,9 @@ body {
   }
 
   .fridge-reference-art {
-    right: 8px;
-    width: 56%;
+    top: 15%;
+    right: 12px;
+    width: 46%;
+    height: 70%;
   }
 }
