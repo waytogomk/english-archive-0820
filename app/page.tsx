@@ -16,7 +16,11 @@ export default function HomePage() {
             sizes="(max-width: 620px) 730px, (max-width: 1400px) 100vw, 1400px"
             alt="어린이 원서 읽기와 문법·시험 대비 학습을 소개하는 English Archive 메인 화면"
           />
-          <span className="hero-front-brand" aria-hidden="true">ENGLISH ARCHIVE</span>
+          <div className="hero-copy-overlay">
+            <h1>ENGLISH ARCHIVE</h1>
+            <p>필요할 때 꺼내 푸는 나만의 영어 학습 아카이브</p>
+            <small>초등 고학년부터 중등 내신까지, 내 속도에 맞춰 필요한 자료를 언제든 찾아보세요.</small>
+          </div>
           <Link className="hero-panel-link hero-panel-link-novel" href="/novel-study" aria-label="원서리딩 학습으로 이동" />
           <Link className="hero-panel-link hero-panel-link-exam" href="/exam-prep" aria-label="중고등 내신 학습으로 이동" />
         </div>
