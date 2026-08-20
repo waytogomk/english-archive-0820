@@ -822,7 +822,7 @@ footer {
   padding-top: 18px;
   border-top: 1px solid var(--line);
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .quiz-header .brand b {

@@ -48,7 +48,7 @@ export default function HomePage() {
     <footer className="site-footer">
       <div className="footer-bottom">
         <span>2026 English Archive. Inc. All rights reserved.</span>
-        <Link href="/admin">관리자</Link>
+        <Link href="/admin">Admin</Link>
       </div>
     </footer>
   </>;
