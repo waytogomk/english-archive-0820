@@ -780,7 +780,7 @@ body {
 }
 
 footer {
-  border-top-color: var(--line);
+  border-top: 0;
 }
 
 .site-footer {
@@ -820,7 +820,7 @@ footer {
 
 .footer-bottom {
   padding-top: 18px;
-  border-top: 1px solid var(--line);
+  border-top: 0;
   justify-content: space-between;
   font-size: 14px;
 }
