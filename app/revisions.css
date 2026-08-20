@@ -1220,12 +1220,12 @@ body {
 /* Rebuilt hero copy: the text is no longer visually locked to the supplied bitmap. */
 .hero-copy-overlay {
   position: absolute;
-  top: 10.5%;
+  top: 4.5%;
   left: 50%;
   z-index: 2;
   display: flex;
   width: 80%;
-  height: 24%;
+  height: 30%;
   align-items: center;
   flex-direction: column;
   transform: translateX(-50%);
@@ -1235,7 +1235,7 @@ body {
 }
 
 .hero.hero-image-shell .hero-copy-overlay h1 {
-  margin: 0 0 2.2cqw;
+  margin: 0 0 4.6cqw;
   color: #132b43;
   font-family: var(--font-fraunces), Georgia, serif;
   font-size: clamp(32px, 4.5cqw, 72px);
@@ -1265,14 +1265,14 @@ body {
 
 @media (max-width: 620px) {
   .hero-copy-overlay {
-    top: 10.5%;
+    top: 4.5%;
     width: 88%;
-    height: 24%;
+    height: 30%;
     box-shadow: 0 0 12px 8px rgba(248, 248, 251, .99);
   }
 
   .hero.hero-image-shell .hero-copy-overlay h1 {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
     font-size: 16px;
   }
 
