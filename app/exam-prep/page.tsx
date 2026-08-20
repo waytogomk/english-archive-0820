@@ -6,7 +6,7 @@ import { StatusPill } from "@/components/status-pill";
 export default function ExamPrepPage() {
   return <>
     <SiteHeader />
-    <main className="inner-main">
+    <main className="inner-main exam-prep-main">
       <section className="page-intro exam-prep-intro">
         <div>
           <Link className="back-link" href="/">← 홈</Link>

@@ -1796,3 +1796,95 @@ body {
     height: 70%;
   }
 }
+
+/* Test Prep: a restrained navy-and-blue tonal system. */
+.exam-prep-main {
+  --exam-navy: #1d3048;
+  --exam-blue: #5877a4;
+  --exam-mid: #8ea8c8;
+  --exam-pale: #e7eff8;
+  --exam-pale-deep: #dce8f4;
+}
+
+.exam-prep-main .exam-prep-intro {
+  border: 1px solid #d5e1ed;
+  background: var(--exam-pale);
+  color: var(--exam-navy);
+  box-shadow: none;
+}
+
+.exam-prep-intro .eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--exam-navy);
+  font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+  font-size: clamp(36px, 5.2vw, 64px);
+  font-weight: 400;
+  letter-spacing: -.035em;
+  line-height: 1;
+}
+
+.exam-prep-main .exam-prep-intro h1 {
+  color: var(--exam-navy);
+}
+
+.exam-prep-main .exam-prep-intro p,
+.exam-prep-main .back-link {
+  color: #5d7088;
+}
+
+.exam-prep-main .intro-icon {
+  background: var(--exam-pale-deep);
+  color: var(--exam-blue);
+}
+
+.exam-prep-main .exam-menu-card {
+  border-color: #d7e1ec;
+  box-shadow: 0 15px 34px rgba(36, 65, 96, .08);
+}
+
+.exam-prep-main .exam-school-card .exam-menu-head {
+  background: #e5edf6;
+}
+
+.exam-prep-main .exam-grammar-card .exam-menu-head {
+  background: #dce7f3;
+}
+
+.exam-prep-main .menu-step {
+  color: #8199b8;
+}
+
+.exam-prep-main .menu-icon,
+.exam-prep-main .exam-grammar-card .menu-icon {
+  background: rgba(255, 255, 255, .58);
+  color: var(--exam-blue);
+}
+
+.exam-prep-main .exam-menu-card .eyebrow {
+  color: var(--exam-blue);
+}
+
+.exam-prep-main .exam-menu-card h2 {
+  color: var(--exam-navy);
+}
+
+.exam-prep-main .status-in-progress,
+.exam-prep-main .status-review {
+  background: #e7eef6;
+  color: #526b8b;
+}
+
+.exam-prep-main .status-in-progress > span,
+.exam-prep-main .status-review > span {
+  background: #6f89aa;
+}
+
+.exam-prep-main .button-dark {
+  border-color: var(--exam-blue);
+  background: var(--exam-blue);
+}
+
+.exam-prep-main .button-dark:hover {
+  background: #6885ad;
+}
