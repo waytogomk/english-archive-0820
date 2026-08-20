@@ -1231,6 +1231,14 @@ body {
   min-height: 300px;
 }
 
+.dashboard-row .card-title h2,
+.dashboard-row .fridge-preview h2 {
+  font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.08;
+}
+
 .notice-card {
   padding: 32px;
   border: 1px solid #d9e2ec;

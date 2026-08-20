@@ -27,6 +27,13 @@ export default function HomePage() {
       </section>
 
       <section className="dashboard-row">
+        <article className="notice-card">
+          <div className="card-title"><h2>Notice</h2><span>새 소식</span></div>
+          <ul className="notice-list">
+            <li><b>NEW</b><div><strong>Gangsta Granny Reading Quiz</strong><small>Chapter별 퀴즈가 업데이트되었어요.</small></div></li>
+            <li><b>TIP</b><div><strong>학습하고 간식 쿠폰 받기</strong><small>완료한 학습이 쌓이면 원하는 간식을 고를 수 있어요.</small></div></li>
+          </ul>
+        </article>
         <article className="recent-card">
           <div className="card-title"><h2>Recent Lesson</h2><Link href="/progress">전체 보기 →</Link></div>
           <div className="recent-item"><div className="recent-icon">✓</div><div><strong>Gangsta Granny · Ch. 1–11</strong><small>20문제 중 12문제 완료</small></div><StatusPill status="in-progress" /></div>
@@ -35,13 +42,6 @@ export default function HomePage() {
         <article className="fridge-preview">
           <div><span className="eyebrow">TEACHER&apos;S TREAT FRIDGE</span><h2>Study Hard,<br />Snack Smart</h2><p className="reward-coupon"><strong>1</strong><span>쿠폰</span></p><Link className="button button-dark" href="/treat-fridge">Open</Link></div>
           <Image className="fridge-reference-art" src="/images/treat-fridge-reference-card.png" width={1024} height={577} alt="귀여운 간식이 가득 들어 있는 열린 냉장고" />
-        </article>
-        <article className="notice-card">
-          <div className="card-title"><h2>Notice</h2><span>새 소식</span></div>
-          <ul className="notice-list">
-            <li><b>NEW</b><div><strong>Gangsta Granny Reading Quiz</strong><small>Chapter별 퀴즈가 업데이트되었어요.</small></div></li>
-            <li><b>TIP</b><div><strong>학습하고 간식 쿠폰 받기</strong><small>완료한 학습이 쌓이면 원하는 간식을 고를 수 있어요.</small></div></li>
-          </ul>
         </article>
       </section>
     </main>
