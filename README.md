@@ -21,10 +21,11 @@ pnpm run build
 ## Vercel 배포
 
 1. 이 GitHub 저장소를 Vercel에 연결합니다.
-2. Framework Preset은 `Next.js`를 선택합니다.
-3. Install Command는 `pnpm install`, Build Command는 `pnpm run build`를 사용합니다.
-4. Output Directory는 Next.js 기본값을 유지합니다.
-5. 실제 인증·저장 기능을 연결할 때 `.env.example`의 환경변수를 Vercel Project Settings에 등록합니다.
+2. Root Directory는 저장소 루트인 `./`로 둡니다.
+3. [`vercel.json`](./vercel.json)이 `nextjs` 프레임워크를 명시하므로 Application/Framework Preset이 비어 있어도 배포 파일에서 Next.js로 설정됩니다.
+4. Install Command, Build Command, Output Directory의 Override는 모두 끄고 Vercel 기본값을 사용합니다.
+5. Vercel 지원 범위에 맞춘 `pnpm@10.34.5`와 `pnpm-lock.yaml`이 자동으로 사용됩니다.
+6. 실제 인증·저장 기능을 연결할 때 `.env.example`의 환경변수를 Vercel Project Settings에 등록합니다.
 
 `.env`, `.next`, `node_modules`, 로컬 `data`와 업로드 원본은 Git에 포함하지 않습니다.
 

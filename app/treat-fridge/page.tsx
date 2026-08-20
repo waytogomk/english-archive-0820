@@ -20,7 +20,7 @@ export default function TreatFridgePage() {
           <h1>Study, earn,<br />and pick your treat!</h1>
           <p>선택 가능한 보상권이 <strong>1개</strong> 있어요. 먹고 싶은 간식을 직접 골라보세요.</p>
         </div>
-        <Image className="treat-hero-photo" src="/images/treat-fridge-kawaii.png" width={1024} height={1536} alt="스무 가지 귀여운 간식이 담긴 보상 냉장고" />
+        <Image className="treat-hero-photo" src="/images/treat-fridge-kawaii-transparent.png" width={1024} height={1536} alt="스무 가지 귀여운 간식이 담긴 보상 냉장고" />
       </section>
       <section className="treat-picker">
         <div className="section-heading compact"><div><span className="eyebrow">PICK ONE</span><h2>오늘의 간식은?</h2></div><p>선택 전에는 언제든 바꿀 수 있어요.</p></div>

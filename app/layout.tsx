@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "@fontsource-variable/newsreader";
+import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
 import "./revisions.css";
 

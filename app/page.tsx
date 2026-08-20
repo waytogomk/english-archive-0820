@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow hero-eyebrow">Build your academic confidence!</span>
-          <h1>오늘의 집중이<br /><em>시험의 자신감이 됩니다.</em></h1>
+          <h1>필요할 때 꺼내 푸는<br /><em>나만의 영어 보물창고, <span className="hero-brand-serif">English Archive!</span></em></h1>
           <p>학교 시험부터 문법, 원서리딩까지.<br />풀고, 확인하고, 내 실력을 차곡차곡 쌓아보세요.</p>
           <div className="hero-actions">
             <Link className="button button-dark" href="/exam-prep">오늘 학습 시작</Link>
@@ -55,7 +55,7 @@ export default function HomePage() {
         </article>
         <article className="fridge-preview">
           <div><span className="eyebrow">TEACHER&apos;S TREAT FRIDGE</span><h2>공부하고,<br />내 간식은 내가 골라요!</h2><p>선택 가능한 보상권 <strong>1개</strong></p><Link className="button button-dark" href="/treat-fridge">냉장고 열기</Link></div>
-          <Image className="fridge-photo" src="/images/treat-fridge-kawaii.png" width={1024} height={1536} alt="스무 가지 귀여운 간식이 담긴 보상 냉장고" />
+          <Image className="fridge-photo" src="/images/treat-fridge-kawaii-transparent.png" width={1024} height={1536} alt="스무 가지 귀여운 간식이 담긴 보상 냉장고" />
         </article>
       </section>
     </main>
