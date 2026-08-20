@@ -41,7 +41,9 @@ export default function HomePage() {
         </article>
         <article className="fridge-preview">
           <div><span className="fridge-card-title">Teacher&apos;s Treat Fridge</span><h2 className="fridge-slogan">Study Hard,<br />Snack Smart!</h2><p className="reward-coupon"><strong>1</strong><span>Coupon</span></p><Link className="button button-dark" href="/treat-fridge">Open</Link></div>
-          <Image className="fridge-reference-art" src="/images/treat-fridge-reference-card.png" width={1024} height={577} alt="귀여운 간식이 가득 들어 있는 열린 냉장고" />
+          <div className="fridge-art-window">
+            <Image className="fridge-reference-art" src="/images/treat-fridge-reference-card.png" width={1024} height={577} alt="귀여운 간식이 가득 들어 있는 열린 냉장고" />
+          </div>
         </article>
       </section>
     </main>
