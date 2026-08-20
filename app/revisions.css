@@ -438,6 +438,53 @@ body {
   object-fit: contain;
 }
 
+.fridge-preview > div {
+  max-width: 54%;
+}
+
+.fridge-preview .reward-coupon {
+  display: inline-flex;
+  margin: 0 0 18px;
+  padding: 5px 15px 5px 5px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .9);
+  color: var(--ink);
+  box-shadow: 0 8px 18px rgba(34, 57, 96, .1);
+}
+
+.reward-coupon strong {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--brand-blue);
+  place-items: center;
+  font-size: 21px;
+}
+
+.reward-coupon span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fridge-reference-art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.fridge-preview .button {
+  min-width: 180px;
+}
+
 .treat-hero {
   background: var(--cream);
 }
@@ -1212,5 +1259,17 @@ footer {
 
   .hero-panel-link {
     border-radius: 9px;
+  }
+
+  .fridge-preview > div {
+    max-width: 52%;
+  }
+
+  .fridge-reference-art {
+    width: 58%;
+  }
+
+  .fridge-preview .button {
+    min-width: 140px;
   }
 }

@@ -24,13 +24,13 @@ export default function HomePage() {
 
       <section className="dashboard-row">
         <article className="recent-card">
-          <div className="card-title"><div><span className="eyebrow">RECENT STUDY</span><h2>최근 학습</h2></div><Link href="/progress">전체 보기 →</Link></div>
+          <div className="card-title"><h2>Recent Lesson</h2><Link href="/progress">전체 보기 →</Link></div>
           <div className="recent-item"><div className="recent-icon">✓</div><div><strong>Gangsta Granny · Ch. 1–11</strong><small>20문제 중 12문제 완료</small></div><StatusPill status="in-progress" /></div>
           <div className="progress-track"><span style={{ width: "60%" }} /></div>
         </article>
         <article className="fridge-preview">
-          <div><span className="eyebrow">TEACHER&apos;S TREAT FRIDGE</span><h2>Study Hard,<br />Snack Smart</h2><p>선택 가능한 보상권 <strong>1개</strong></p><Link className="button button-dark" href="/treat-fridge">Open the Fridge</Link></div>
-          <Image className="fridge-photo" src="/images/treat-fridge-kawaii-transparent.png" width={1024} height={1536} alt="스무 가지 귀여운 간식이 담긴 보상 냉장고" />
+          <div><span className="eyebrow">TEACHER&apos;S TREAT FRIDGE</span><h2>Study Hard,<br />Snack Smart</h2><p className="reward-coupon"><strong>1</strong><span>쿠폰</span></p><Link className="button button-dark" href="/treat-fridge">Open</Link></div>
+          <Image className="fridge-reference-art" src="/images/treat-fridge-reference-card.png" width={1024} height={577} alt="귀여운 간식이 가득 들어 있는 열린 냉장고" />
         </article>
       </section>
     </main>
