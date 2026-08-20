@@ -1105,14 +1105,14 @@ footer {
   color: var(--brand-blue);
 }
 
-/* Supplied homepage artwork: keep its composition intact and make the painted CTA usable. */
+/* Supplied homepage artwork with direct links over its two learning panels. */
 .hero.hero-image-shell {
   position: relative;
   display: block;
   width: min(1400px, calc(100% - 48px));
   max-width: 1400px;
   min-height: 0;
-  aspect-ratio: 1407 / 768;
+  aspect-ratio: 1698 / 926;
   margin: 24px auto 0;
   padding: 0;
   border: 1px solid var(--line);
@@ -1125,7 +1125,8 @@ footer {
 .hero-image-canvas {
   position: relative;
   width: calc(100% + 10px);
-  aspect-ratio: 1407 / 768;
+  aspect-ratio: 1698 / 926;
+  container-type: inline-size;
 }
 
 .hero-front-image {
@@ -1136,20 +1137,53 @@ footer {
   object-position: center;
 }
 
-.hero-image-link {
+.hero-front-brand {
   position: absolute;
-  top: 84.3%;
-  left: 40.2%;
-  width: 20%;
-  height: 8.2%;
-  border-radius: 999px;
+  top: 13.5%;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  width: 38%;
+  height: 8.5%;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  background: #f8f8fb;
+  box-shadow: 0 0 16px 12px rgba(248, 248, 251, .96);
+  color: #162a3b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 3.35cqw, 56px);
+  letter-spacing: .025em;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.hero-image-link:hover {
-  box-shadow: 0 0 0 4px rgba(59, 134, 232, .16);
+.hero-panel-link {
+  position: absolute;
+  z-index: 3;
+  top: 37.1%;
+  height: 44.2%;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: box-shadow .18s ease, transform .18s ease;
 }
 
-.hero-image-link:focus-visible {
+.hero-panel-link-novel {
+  left: 8.9%;
+  width: 31.2%;
+}
+
+.hero-panel-link-exam {
+  left: 59.7%;
+  width: 31.3%;
+}
+
+.hero-panel-link:hover {
+  box-shadow: 0 0 0 4px rgba(59, 134, 232, .2), 0 12px 30px rgba(34, 57, 96, .12);
+  transform: translateY(-2px);
+}
+
+.hero-panel-link:focus-visible {
   outline: 3px solid var(--brand-blue);
   outline-offset: 4px;
 }
@@ -1157,18 +1191,26 @@ footer {
 @media (max-width: 620px) {
   .hero.hero-image-shell {
     width: calc(100% - 24px);
-    height: 394px;
-    aspect-ratio: auto;
+    height: auto;
+    aspect-ratio: 1698 / 926;
     margin: 16px 12px 0;
     border-radius: 22px;
   }
 
   .hero-image-canvas {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 730px;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% + 4px);
     max-width: none;
-    transform: translateX(-50%);
+    transform: none;
+  }
+
+  .hero-front-brand {
+    font-size: 14px;
+  }
+
+  .hero-panel-link {
+    border-radius: 9px;
   }
 }
