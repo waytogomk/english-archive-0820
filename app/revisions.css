@@ -1217,45 +1217,6 @@ body {
   }
 }
 
-/* Crop only the empty blue area while preserving the fridge's rendered scale. */
-.fridge-art-window {
-  position: absolute;
-  top: 12%;
-  right: 18px;
-  z-index: 1;
-  width: 30%;
-  height: 76%;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(4, 18, 35, .22);
-  overflow: hidden;
-}
-
-.fridge-art-window .fridge-reference-art {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 113.34%;
-  max-width: none;
-  height: 100%;
-  border-radius: 0;
-  box-shadow: none;
-  object-fit: cover;
-  object-position: right center;
-}
-
-@media (max-width: 720px) {
-  .fridge-art-window {
-    top: 15%;
-    right: 12px;
-    width: 40%;
-    height: 70%;
-  }
-
-  .fridge-art-window .fridge-reference-art {
-    width: 115%;
-  }
-}
-
 /* Homepage utility cards align to the full width of the hero artwork. */
 .dashboard-row {
   width: calc(100% - 32px);
