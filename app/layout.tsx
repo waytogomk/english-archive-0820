@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/manrope";
-import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
+import { Google_Sans, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import "./revisions.css";
+
+const googleSans = Google_Sans({
+  subsets: ["latin"],
+  variable: "--font-google-sans",
+  display: "swap",
+  adjustFontFallback: false,
+});
+
+const notoSansKr = Noto_Sans_KR({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-kr",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "English Archive",
@@ -10,5 +22,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="ko"><body>{children}</body></html>;
+  return <html lang="ko" className={`${googleSans.variable} ${notoSansKr.variable}`}><body>{children}</body></html>;
 }

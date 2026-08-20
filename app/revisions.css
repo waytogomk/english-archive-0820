@@ -1001,6 +1001,222 @@ footer {
   }
 }
 
+/* Cohesive navy and powder-blue home system, paired with Google Sans. */
+body,
+button,
+input {
+  font-family: var(--font-google-sans), var(--font-noto-sans-kr), "Noto Sans KR", sans-serif;
+}
+
+body {
+  background: #f6f8fb;
+  color: #1b2c42;
+}
+
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid #e2e7ee;
+  background: rgba(255, 255, 255, .97);
+  box-shadow: 0 3px 12px rgba(32, 51, 76, .035);
+}
+
+.header-inner {
+  height: 74px;
+}
+
+.brand-typographic {
+  gap: 9px;
+  color: #18283b;
+  font-family: var(--font-google-sans), sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.brand-typographic span + span {
+  padding-left: 11px;
+  border-left: 2px solid #b9c5d5;
+  color: #6079ad;
+}
+
+.site-header nav {
+  height: 100%;
+  gap: 33px;
+  color: #66738a;
+  font-family: var(--font-google-sans), var(--font-noto-sans-kr), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.site-header nav a {
+  position: relative;
+  display: inline-flex;
+  height: 100%;
+  padding: 0;
+  align-items: center;
+  gap: 7px;
+  transition: color .18s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #315a9a;
+}
+
+.site-header nav a.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  border-radius: 2px 2px 0 0;
+  background: #6d83b1;
+  content: "";
+}
+
+.site-header .nav-treat {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.nav-treat svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.hero-front-brand {
+  top: 6.8%;
+  width: 48%;
+  height: 13.2%;
+  background: #f8f8fb;
+  box-shadow: 0 0 22px 17px rgba(248, 248, 251, .98);
+  color: #162a3b;
+  font-family: var(--font-google-sans), sans-serif;
+  font-size: clamp(28px, 4.25cqw, 72px);
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+
+.dashboard-row {
+  padding-top: 32px;
+}
+
+.recent-card {
+  border-color: #d9e2ec;
+  background: #edf3f8;
+  box-shadow: 0 16px 36px rgba(28, 48, 73, .07);
+}
+
+.recent-icon {
+  background: #d2e1f1;
+  color: #315a91;
+}
+
+.recent-card .progress-track {
+  background: #d8e1eb;
+}
+
+.recent-card .progress-track span {
+  background: #6683ae;
+}
+
+.fridge-preview {
+  border-color: #172a43;
+  background: #172a43;
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(23, 42, 67, .17);
+}
+
+.fridge-preview .eyebrow,
+.fridge-preview p {
+  color: #afc9ec;
+}
+
+.fridge-preview h2 {
+  color: #fff;
+}
+
+.fridge-preview .reward-coupon {
+  background: #f4f7fb;
+  color: #1b2c42;
+  box-shadow: none;
+}
+
+.fridge-preview .button {
+  border-color: #6889bd;
+  background: #6889bd;
+  color: #fff;
+  box-shadow: none;
+}
+
+.fridge-preview .button:hover {
+  background: #7898c8;
+  box-shadow: 0 8px 18px rgba(5, 17, 34, .22);
+}
+
+.fridge-reference-art {
+  top: 10px;
+  right: 10px;
+  width: 40%;
+  height: calc(100% - 20px);
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(4, 18, 35, .22);
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    height: auto;
+    padding: 15px 18px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .brand-typographic {
+    font-size: 20px;
+  }
+
+  .site-header nav {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    gap: 24px;
+    overflow-x: auto;
+    font-size: 14px;
+    scrollbar-width: none;
+  }
+
+  .site-header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header nav a,
+  .site-header nav a:not(.nav-treat) {
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  .hero-front-brand {
+    top: 6.8%;
+    width: 48%;
+    height: 13.2%;
+    font-size: 16px;
+  }
+
+  .fridge-reference-art {
+    right: 8px;
+    width: 56%;
+  }
+}
+
 /* Keep the established English Archive palette; Renaissance is a layout reference only. */
 :root {
   --ink: #151a23;
@@ -1271,5 +1487,89 @@ footer {
 
   .fridge-preview .button {
     min-width: 140px;
+  }
+}
+
+/* Final visual tokens and overrides: calm navy, slate blue, and powder blue. */
+:root {
+  --ink: #1b2c42;
+  --muted: #6b788b;
+  --brand-blue: #4e6f9f;
+  --brand-bright: #6889bd;
+  --sky: #9eb9d9;
+  --line: #dbe3ec;
+  --warm: #f6f8fb;
+  --shadow: 0 14px 35px rgba(28, 48, 73, .08);
+}
+
+.site-header {
+  border-top: 0;
+}
+
+.brand-typographic span + span {
+  border-left-color: #b9c5d5;
+  color: #6079ad;
+}
+
+.hero-front-brand {
+  top: 6.8%;
+  width: 48%;
+  height: 13.2%;
+  background: #f8f8fb;
+  box-shadow: 0 0 22px 17px rgba(248, 248, 251, .98);
+  color: #162a3b;
+  font-family: var(--font-google-sans), sans-serif;
+  font-size: clamp(28px, 4.25cqw, 72px);
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+
+.recent-card {
+  border-color: #d9e2ec;
+  background: #edf3f8;
+}
+
+.fridge-preview,
+.fridge-preview:hover {
+  border-color: #172a43;
+  background: #172a43;
+  color: #fff;
+}
+
+.fridge-preview .eyebrow,
+.fridge-preview p {
+  color: #afc9ec;
+}
+
+.fridge-preview h2 {
+  color: #fff;
+}
+
+.fridge-preview .button,
+.fridge-preview .button:hover {
+  border-color: #6889bd;
+  background: #6889bd;
+  color: #fff;
+}
+
+.fridge-reference-art {
+  top: 10px;
+  right: 10px;
+  width: 40%;
+  height: calc(100% - 20px);
+  border-radius: 22px;
+}
+
+@media (max-width: 720px) {
+  .hero-front-brand {
+    top: 6.8%;
+    width: 48%;
+    height: 13.2%;
+    font-size: 16px;
+  }
+
+  .fridge-reference-art {
+    right: 8px;
+    width: 56%;
   }
 }
