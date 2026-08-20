@@ -137,7 +137,7 @@ ENGLISH ARCHIVE는 Renaissance의 **성숙한 교육 브랜드 톤, 넓은 여�
 - `next/font/google`로 두 글꼴을 자체 호스팅해 브라우저에서 Google 서버에 별도 요청하지 않도록 한다.
 - Renaissance 내비게이션의 가볍고 또렷한 산세리프 인상을 참고한다.
 - 영문 브랜드 `ENGLISH ARCHIVE`, 메뉴, 영문 라벨에는 Google Sans를 사용한다.
-- 홈 전면의 큰 `ENGLISH ARCHIVE` 제목은 더 강한 인상을 위해 `Fraunces` 700을 사용한다.
+- 홈 전면의 큰 `ENGLISH ARCHIVE` 제목은 레퍼런스와 동일하게 `Iowan Old Style`, `Baskerville`, `Times New Roman`, serif 순서의 디스플레이 스택을 사용한다. 굵기는 400, 자간은 `-0.025em`으로 두고 큰 크기로 임팩트를 만든다.
 - 한글 제목·본문·퀴즈는 Google Sans와 자연스럽게 어울리는 Noto Sans KR을 사용한다.
 - 손글씨체와 장식용 serif는 사용하지 않는다.
 

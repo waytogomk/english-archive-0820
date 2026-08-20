@@ -1237,11 +1237,11 @@ body {
 .hero.hero-image-shell .hero-copy-overlay h1 {
   margin: 0 0 4.6cqw;
   color: #132b43;
-  font-family: var(--font-fraunces), Georgia, serif;
-  font-size: clamp(32px, 4.5cqw, 72px);
-  font-weight: 700;
-  letter-spacing: .025em;
-  line-height: 1;
+  font-family: "Iowan Old Style", Baskerville, "Times New Roman", serif;
+  font-size: clamp(36px, 5cqw, 80px);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.08;
 }
 
 .hero-copy-overlay p {
@@ -1273,7 +1273,7 @@ body {
 
   .hero.hero-image-shell .hero-copy-overlay h1 {
     margin-bottom: 14px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .hero-copy-overlay p {
