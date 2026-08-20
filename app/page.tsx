@@ -8,31 +8,18 @@ export default function HomePage() {
   return <>
     <SiteHeader />
     <main>
-      <section className="hero">
-        <div className="hero-copy">
-          <span className="eyebrow hero-eyebrow">Build your academic confidence!</span>
-          <h1>필요할 때 꺼내 푸는<br /><em>나만의 영어 보물창고, <span className="hero-brand-display">English Archive!</span></em></h1>
-          <p>학교 시험부터 문법, 원서리딩까지.<br />풀고, 확인하고, 내 실력을 차곡차곡 쌓아보세요.</p>
-          <div className="hero-actions">
-            <Link className="button button-dark" href="/exam-prep">오늘 학습 시작</Link>
-            <Link className="button button-light" href="#courses">학습 메뉴 보기</Link>
-          </div>
-        </div>
-        <div className="hero-study-board">
-          <div className="study-board-top">
-            <div><strong>Today&apos;s Focus</strong><span>이번 주 학습 계획</span></div>
-          </div>
-          <div className="focus-score">
-            <span>이번 주 학습</span>
-            <strong>8<small> / 10 sets</small></strong>
-            <div className="focus-track"><i /></div>
-          </div>
-          <ul>
-            <li><span className="task-check">✓</span><div><strong>학교별 어휘</strong><small>1–25 완료</small></div><b>100%</b></li>
-            <li><span className="task-number">02</span><div><strong>관계사 오답 재학습</strong><small>4문제 남음</small></div><b>진행 중</b></li>
-            <li><span className="task-number">03</span><div><strong>원서리딩 Reading Quiz</strong><small>Gangsta Granny</small></div><b>시작 전</b></li>
-          </ul>
-          <i className="board-star">✦</i>
+      <section className="hero hero-image-shell" aria-label="English Archive 학습 소개">
+        <div className="hero-image-canvas">
+          <Image
+            className="hero-front-image"
+            src="/images/english-archive-hero.png"
+            width={1407}
+            height={768}
+            preload
+            sizes="(max-width: 620px) 730px, (max-width: 1400px) 100vw, 1400px"
+            alt="어린이 원서 읽기와 문법·시험 대비 학습을 소개하는 English Archive 메인 화면"
+          />
+          <Link className="hero-image-link" href="#courses" aria-label="학습 메뉴 둘러보기" />
         </div>
       </section>
 
