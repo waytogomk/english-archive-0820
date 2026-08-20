@@ -10,7 +10,7 @@ export default function ExamPrepPage() {
       <section className="page-intro exam-prep-intro">
         <div>
           <Link className="back-link" href="/">← 홈</Link>
-          <span className="eyebrow">MIDDLE & HIGH SCHOOL EXAM</span>
+          <span className="eyebrow">Test Prep</span>
           <h1>중고등 내신</h1>
           <p>학교 시험에 맞춘 실전 학습과 핵심 문법을 체계적으로 준비하세요.</p>
         </div>
