@@ -36,13 +36,19 @@ export default function HomePage() {
           <div><span className="eyebrow">TEACHER&apos;S TREAT FRIDGE</span><h2>Study Hard,<br />Snack Smart</h2><p className="reward-coupon"><strong>1</strong><span>쿠폰</span></p><Link className="button button-dark" href="/treat-fridge">Open</Link></div>
           <Image className="fridge-reference-art" src="/images/treat-fridge-reference-card.png" width={1024} height={577} alt="귀여운 간식이 가득 들어 있는 열린 냉장고" />
         </article>
+        <article className="notice-card">
+          <div className="card-title"><h2>Notice</h2><span>새 소식</span></div>
+          <ul className="notice-list">
+            <li><b>NEW</b><div><strong>Gangsta Granny Reading Quiz</strong><small>Chapter별 퀴즈가 업데이트되었어요.</small></div></li>
+            <li><b>TIP</b><div><strong>학습하고 간식 쿠폰 받기</strong><small>완료한 학습이 쌓이면 원하는 간식을 고를 수 있어요.</small></div></li>
+          </ul>
+        </article>
       </section>
     </main>
     <footer className="site-footer">
       <div className="footer-contact">
         <strong>Contact</strong>
         <span>Email: <a href="mailto:eng_archive@gmail.com">eng_archive@gmail.com</a></span>
-        <span>Mobile: <a href="tel:+821034535158">010.3453.5158</a></span>
       </div>
       <div className="footer-bottom">
         <span>2026 English Archive. Inc. All rights reserved.</span>
