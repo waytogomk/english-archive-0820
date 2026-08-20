@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="hero-image-canvas">
           <Image
             className="hero-front-image"
-            src="/images/english-archive-hero-no-cta.png"
+            src="/images/english-archive-hero-refined.png"
             width={1698}
             height={926}
             preload

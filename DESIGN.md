@@ -131,6 +131,8 @@ ENGLISH ARCHIVE는 Renaissance의 **성숙한 교육 브랜드 톤, 넓은 여�
 
 ### 적용 글꼴
 
+- 홈의 `ENGLISH ARCHIVE`와 두 학습 패널 제목은 `"Iowan Old Style", Baskerville, "Times New Roman", serif` 계열로 통일한다.
+
 - 영문: `Google Sans`
 - 한글: `Noto Sans KR`
 - fallback: system sans-serif
@@ -173,7 +175,7 @@ ENGLISH ARCHIVE는 Renaissance의 **성숙한 교육 브랜드 톤, 넓은 여�
 
 ### 9.0 전면 히어로 이미지
 
-- 홈 첫 화면에는 사용자가 제공한 이미지를 정리한 `public/images/english-archive-hero-no-cta.png`를 전면 비주얼로 사용한다.
+- 홈 첫 화면에는 모드 전환을 제거하고 메뉴 그림을 축소한 `public/images/english-archive-hero-refined.png`를 전면 비주얼로 사용한다.
 - 이미지 안에 브랜드 문구와 학습 소개가 이미 포함되어 있으므로 기존 히어로 문구와 학습 현황 보드는 중복해서 올리지 않는다.
 - 이미지 아래의 `퀴즈 컬렉션 둘러보기` 버튼은 사용하지 않는다.
 - `Children’s Book Reading` 패널은 원서리딩으로, `Grammar & Test Prep` 패널은 중고등 내신으로 바로 연결한다.
