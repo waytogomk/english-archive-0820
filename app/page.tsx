@@ -46,10 +46,6 @@ export default function HomePage() {
       </section>
     </main>
     <footer className="site-footer">
-      <div className="footer-contact">
-        <strong>Contact</strong>
-        <span>Email: <a href="mailto:eng_archive@gmail.com">eng_archive@gmail.com</a></span>
-      </div>
       <div className="footer-bottom">
         <span>2026 English Archive. Inc. All rights reserved.</span>
         <Link href="/admin">관리자</Link>
